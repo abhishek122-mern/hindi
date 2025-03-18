@@ -4,26 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Meet the new Surface Laptop 7th Edition, a Copilot+ PC | Microsoft Surfac</title>
   </head>
-  <body class="bg-gray-200">
-<div class="container mt-48 flex mx-auto items-center justify-center">
- <div class="left w-1/3">
-  <img class="w-80" src="logo.svg/fblogo.svg" alt="facebook"/>
-  <p class="text-3xl mx-8">Connect with friends and the world around you on Facebook.</p>
- </div>
- <div class="right flex flex-col bg-white p-8 rounded-lg w-1/4">
- 
-    <input class="px-4 h-12 my-2 border-1 border-gray-200 rounded-lg outline-blue-600" type="Email" placeholder="Email address or phone number"/>
-    <input class="px-4 h-12 my-2 border-1 border-gray-200 rounded-lg outline-blue-600" type ="password" placeholder="password"/>
-    <button class="btn bg-blue-600 text-white my-2 py-3 hover:bg-blue-700 rounded-md font-bold ">Log In</button>
-    <span class="text-blue-500 text-center text-sm my-2 cursor-pointer hover:underline">Forgotten password?</span>
-    <hr class="my-2">
-    <button class="btn my-2 bg-green-600 hover:bg-green-700 my-2 py-3 rounded-md font-bold px-4 mx-auto w-fit">Create New Account</button>
+<body>
+  <div class="navbar flex justify-between items-center">
+    <!-- Hamburger and search icons for mobile screens -->
+    <div class="flex justify-center items-center md:order-2">
+      <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        <div class="line h-0.5 w-6 my-1 bg-black"></div>
+      </div>
+      <div class="search md:hidden order-1 md:order-3">SearchIcon</div>
+    </div>
   
- </div>
-
+    <!-- Microsoft logo, centered on small screens, moves to the first position after md -->
+    <div class="logo text-center flex flex-grow md:flex-grow-0 order-2 md:order-1">
+      <div class="w-4 flex"><img src="logo.svg/mlogo.png"> Microsoft</div>
+      <div class="features md:flex w-fit mx-4 md:mx-4 md:space-x-3 md:static md:w-auto bg-gray-200 md:bg-white space-x-3 absolute inset-0 -translate-x-96 md:-translate-x-0">
+        <div class="fitems">Microsoft365</div>
+        <div class="fitems">0ffice</div>
+        <div class="fitems">Windows</div>
+        <div class="fitems">Surface</div>
+        <div class="fitems">Xbox</div>
+        <div class="fitems">support</div>
+      </div>
+    </div>
+  
+    <!-- Cart and search icons -->
+    <div class="cart flex justify-center items-center order-2 md:order-3">
+      <div class="search hidden md:block">SearchIcon</div>
+      <div>Cart Amount</div>
+    </div>
+  </div>
+  
+  <div class="slider flex flex-col-reverse md:flex-row  bg-[#f2f2f2] mx-3">
+<div class="left flex flex-col justify-center items-center md:items-baseline">
+  
+<h1 class="text-4xl mx-5">Lorem, ipsum dolor. </h1>
+  <p class="w-3/4 mx-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quos.</p>
 </div>
+<div class="right">
+  <img src="logo.svg/lap.png " alt="">
+</div>
+
+  </div>
   
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
